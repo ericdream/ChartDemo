@@ -200,7 +200,7 @@
     CGFloat itemsW = dayWidth;
     [points enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGFloat point_y = getPointY([obj floatValue], k);
-        CGFloat point_x = 20+itemsW*idx;
+        CGFloat point_x = 15+itemsW*idx;
         
         if(idx ==0){
             CGContextMoveToPoint(contextRf, point_x, point_y);
@@ -221,7 +221,7 @@
     CGFloat itemsW = dayWidth;
     [points enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGFloat point_y = getPointY([obj floatValue], k)-2;
-        CGFloat point_x = 20+itemsW*idx-2;
+        CGFloat point_x = 15+itemsW*idx-2;
         
         CGContextAddRect(contextRf, CGRectMake(point_x, point_y, 4, 4));
     }];
